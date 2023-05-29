@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <title>PruebasJQuery</title>
+  </head>
+  <body>
+    <h1>Pruebas de trabajar con JQuery</h1>
+    <main>
+      <p id="clicarsobrealgo">Clicar sobre este texto, por favor</p>
+      <div id="desplegarenacordeon">
+        <h2>Esto es una parte</h2>
+        <div>
+          <p>
+            Un texto... Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsam nisi repudiandae, rem architecto sapiente quae rerum,
+            perferendis cumque possimus ut veritatis numquam debitis quaerat
+            doloremque nihil iure voluptates magni itaque!
+          </p>
+        </div>
+        <h2>Esto es otra parte</h2>
+        <div>
+          <p>
+            Otro texto... Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Ipsam nisi repudiandae, rem architecto sapiente quae rerum,
+            perferendis cumque possimus ut veritatis numquam debitis quaerat
+            doloremque nihil iure voluptates magni itaque!
+          </p>
+        </div>
+        <h2>Y esto es una tercera parte</h2>
+        <div>
+          <p>
+            Y un otro texto más... Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ipsam nisi repudiandae, rem architecto sapiente
+            quae rerum, perferendis cumque possimus ut veritatis numquam debitis
+            quaerat doloremque nihil iure voluptates magni itaque!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+      $("#clicarsobrealgo").click(function () {
+        alert("Has clicado, gracias por hacerlo...");
+      });
+    </script>
+    <script>
+      $("#desplegarenacordeon").accordion();
+    </script>
+    <!--
+    <script>
+      $(document).ready(function () {
+        alert("El documento se ha cargado.");
+      });
+    </script>
+    -->
+  </body>
+</html>
